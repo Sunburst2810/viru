@@ -36,16 +36,17 @@ export default class App extends Component {
       getCurrentNumber: null,
       //slots
       spins: {
-        slot0: -2810,
-        slot9: -2846,
-        slot8: -2882,
-        slot7: -2918,
-        slot6: -2954,
-        slot5: -2630,
-        slot4: -2666,
-        slot3: -2702,
-        slot2: -2738,
-        slot1: -2774 
+        slot0: -2522,
+        slot9: -2558,
+        slot8: -2594,
+        slot7: -2630,
+        slot6: -2666,
+        slot5: -2702,
+        slot4: -2738,
+        slot3: -2774,
+        slot2: -2810,
+        slot1: -2846
+
 
       },
       red: [1, 3, 5, 7, 9],
@@ -390,7 +391,7 @@ export default class App extends Component {
           {/***********************      
            WHEEL SECTION 
            **********************/}
-
+           <center>
           <Plate id="plate">
             <Ball id="ball">•</Ball>
 
@@ -456,7 +457,7 @@ export default class App extends Component {
                 </Result>
               </DataInner>
             </Data>
-          </Plate>
+          </Plate></center>
         </Main>
       </Wrapper>
     );

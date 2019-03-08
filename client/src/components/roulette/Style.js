@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Main = styled.div`
-  width: 374px;
+  width: 475px;
   margin: 0 auto;
 `;
 
@@ -60,7 +60,7 @@ export const ResetButton = styled.button`
   border: none;
   outline: none;
   background: red;
-  height: 50px;
+  height: 50px;8
   width: 150px;
 
   font-family: "Roboto", sans-serif;
@@ -142,14 +142,14 @@ export const Plate = styled.div`
 
 export const Ball = styled.p`
   position: absolute;
-  top: 24%;
-  bottom: 21%;
-  left: 24%;
-  right: 22%;
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
   color: #fff200;
   font-size: 120px;
   z-index: 5;
-  transform: rotateZ(-2810deg);
+  transform: rotateZ(-2522deg);
 `;
 
 export const Inner = styled.div`
@@ -261,7 +261,7 @@ export const Number = styled.div`
 
 export const Pit = styled.span`
   color: #fff;
-  padding-top: 20px;
+  padding-top: 10px;
   width: 120px;
   display: inline-block;
   font-size: 20px;
@@ -269,7 +269,7 @@ export const Pit = styled.span`
   -webkit-transform: scale(1, 1.8);
   transform: scale(1, 1.8);
   position: absolute;
-  top: -175px;
+  top: -180px;
   left: -32px;
 `;
 
