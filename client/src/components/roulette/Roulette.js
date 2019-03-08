@@ -54,7 +54,7 @@ export default class App extends Component {
       slotColor: null,
       slotColorText: null,
       //results preview
-      maskDefault: "Place Your Bets",
+      maskDefault: "Bets",
       revealLuckyNumber: false
     };
 
@@ -123,7 +123,7 @@ export default class App extends Component {
 
     // change mask default text after set timer
     setTimeout(function () {
-      self.setState({ maskDefault: "No More Bets" });
+      self.setState({ maskDefault: "No Bets" });
     }, timer / 2);
 
     setTimeout(function () {
@@ -177,7 +177,7 @@ export default class App extends Component {
     this.setState({
       hideResetButton: true,
       hideSpinButton: false,
-      maskDefault: "Place Your Bets",
+      maskDefault: "Bets",
       slotColorText: null,
       slotColor: null,
       revealLuckyNumber: false
@@ -391,6 +391,8 @@ export default class App extends Component {
           {/***********************      
            WHEEL SECTION 
            **********************/}
+           <br>
+            </br>
            <center>
           <Plate id="plate">
             <Ball id="ball">•</Ball>

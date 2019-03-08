@@ -105,8 +105,8 @@ export const ButtonLabel = styled.span`
            **********************/
 export const Plate = styled.div`
   background-color: gray;
-  width: 450px;
-  height: 450px;
+  width: 300px;
+  height: 300px;
   margin: 12px;
   border-radius: 50%;
   position: relative;
@@ -147,15 +147,15 @@ export const Ball = styled.p`
   left: 5%;
   right: 5%;
   color: #fff200;
-  font-size: 120px;
+  font-size: 60px;
   z-index: 5;
   transform: rotateZ(-2522deg);
 `;
 
 export const Inner = styled.div`
   display: block;
-  height: 450px;
-  width: 450px;
+  height: 300px;
+  width: 300px;
   position: relative;
 
   ::after,
@@ -188,18 +188,18 @@ export const Inner = styled.div`
 `;
 
 export const Number = styled.div`
-  width: 142px;
-  height: 224px;
+  width: 95px;
+  height: 110px;
   display: inline-block;
   text-align: center;
   position: absolute;
   top: 0;
-  left: calc(50% - (140px / 2));
+  left: calc(50% - (100px / 2));
   transform-origin: 50% 100%;
   background-color: transparent;
-  border-left: 48px solid transparent;
-  border-right: 48px solid transparent;
-  border-top: 175px solid black;
+  border-left: 36px solid transparent;
+  border-right: 36px solid transparent;
+  border-top: 150px solid black;
   box-sizing: border-box;
 
   :nth-child(1) {
@@ -262,15 +262,15 @@ export const Number = styled.div`
 export const Pit = styled.span`
   color: #fff;
   padding-top: 10px;
-  width: 120px;
+  width: 90px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   -webkit-transform: scale(1, 1.8);
   transform: scale(1, 1.8);
   position: absolute;
-  top: -180px;
-  left: -32px;
+  top: -150px;
+  left: -36px;
 `;
 
 /***********************      
@@ -330,13 +330,13 @@ export const Result = styled.div`
   background-color: ${props => props.slotColor};
 `;
 export const ResultNumber = styled.div`
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 500;
   line-height: 1.2;
   margin-top: 12px;
 `;
 export const ResultColor = styled.div`
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 1;
 `;
