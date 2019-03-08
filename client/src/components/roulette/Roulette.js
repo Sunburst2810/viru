@@ -393,7 +393,7 @@ export default class App extends Component {
            **********************/}
            <br>
             </br>
-           <center>
+           
           <Plate id="plate">
             <Ball id="ball">•</Ball>
 
@@ -459,7 +459,7 @@ export default class App extends Component {
                 </Result>
               </DataInner>
             </Data>
-          </Plate></center>
+          </Plate>
         </Main>
       </Wrapper>
     );

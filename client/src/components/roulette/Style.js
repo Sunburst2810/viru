@@ -19,7 +19,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Main = styled.div`
-  width: 475px;
+  
+  align-items: center;
+  width: 400px;
   margin: 0 auto;
 `;
 
