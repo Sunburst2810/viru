@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {TimelineMax, TweenMax} from 'gsap';
 import Linear from "gsap";
+import Stopwatch from "./Stopwatch";
 import {
   Wrapper,
   Main,
@@ -36,16 +37,18 @@ export default class App extends Component {
       getCurrentNumber: null,
       //slots
       spins: {
-        slot0: -2522,
-        slot9: -2558,
-        slot8: -2594,
-        slot7: -2630,
-        slot6: -2666,
-        slot5: -2702,
-        slot4: -2738,
-        slot3: -2774,
-        slot2: -2810,
-        slot1: -2846
+        
+        slot0: -2820,
+        slot9: -2856,
+        slot8: -2529,
+        slot7: -2568,
+        slot6: -2601,
+        slot5: -2640,
+        slot4: -2673,
+        slot3: -2712,
+        slot2: -2745,
+        slot1: -2784
+        
 
 
       },
@@ -369,7 +372,10 @@ export default class App extends Component {
           {/***********************      
            BUTTONS SECTION 
            **********************/}
-          <SpinButton
+          <Stopwatch>
+          {Stopwatch}
+          </Stopwatch>
+           <SpinButton
             hide={this.state.hideSpinButton} //hides spin button
             type="button"
             id="spin"
@@ -393,6 +399,10 @@ export default class App extends Component {
            **********************/}
            <br>
             </br>
+            <br>
+            </br>
+          <br>
+          </br>
            
           <Plate id="plate">
             <Ball id="ball">•</Ball>

@@ -21,9 +21,18 @@ export const Wrapper = styled.div`
 export const Main = styled.div`
   
   align-items: center;
-  width: 400px;
+  justyfy-content: center;
+  width: 350px;
   margin: 0 auto;
 `;
+
+export const Button = styled.button`
+background: papayawhip;
+color: palevioletred;
+padding: 5px 10px
+border-radius: 5px;
+
+  `;
 
 export const SpinButton = styled.button`
   border: none;
@@ -144,14 +153,14 @@ export const Plate = styled.div`
 
 export const Ball = styled.p`
   position: absolute;
-  top: 5%;
-  bottom: 5%;
-  left: 5%;
-  right: 5%;
+  top: 17%;
+  bottom: 17%;
+  left: 17%;
+  right: 17%;
   color: #fff200;
   font-size: 60px;
   z-index: 5;
-  transform: rotateZ(-2522deg);
+  transform: rotateZ(-2820deg);
 `;
 
 export const Inner = styled.div`
