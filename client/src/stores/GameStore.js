@@ -2,8 +2,8 @@ import { EventEmitter } from "events";
 import dispatcher from "../dispatcher";
 
 class GameStore extends EventEmitter {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.numbers = [
       { color: "green", id: 0 },
       { color: "red", id: 1 },
@@ -25,6 +25,7 @@ class GameStore extends EventEmitter {
     this.deletingBets = false;
   }
 
+ 
   getNumbers() {
     return this.numbers;
   }

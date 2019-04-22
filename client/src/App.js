@@ -8,16 +8,17 @@ import { Provider } from "react-redux";
 import store from "./store";
 import PrivateRoute from "./components/common/PrivateRoute";
 import Roulette from "./components/roulette/Roulette";
-
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import Dashboard from "./components/dashboard/Dashboard";
+import CreateProfile from "./components/create-profile/CreateProfile";
+import Calculator from "./components/calculator/Calculator";
+import Universaldashboard from "./components/universaldashboard/Universaldashboard";
 import Universal from "./components/auth/Universal";
 import Game from "./components/Game";
-
 
 import "./App.css";
 
@@ -59,10 +60,27 @@ class App extends Component {
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
               </Switch>
               <Switch>
+                <PrivateRoute
+                  exact
+                  path="/universdashboard"
+                  component={Universaldashboard}
+                />
+              </Switch>
+              <Switch>
                 <PrivateRoute exact path="/roulette" component={Roulette} />
               </Switch>
               <Switch>
                 <PrivateRoute exact path="/bet" component={Game} />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  path="/create-profile"
+                  component={CreateProfile}
+                />
+              </Switch>
+              <Switch>
+                <PrivateRoute exact path="/calculator" component={Calculator} />
               </Switch>
             </div>
             <Footer />

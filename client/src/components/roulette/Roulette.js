@@ -22,6 +22,7 @@ import {
 } from "./Style";
 
 export default class App extends Component {
+
   constructor() {
     super();
     this.state = {
@@ -32,7 +33,7 @@ export default class App extends Component {
       // timer
       timer: 9000,
       // random generator
-      luckyNumber: Math.floor(Math.random() * 9),
+      luckyNumber: "9",
       currentNumber: [],
       getCurrentNumber: null,
       //slots
@@ -49,8 +50,6 @@ export default class App extends Component {
         slot2: -2745,
         slot1: -2784
         
-
-
       },
       red: [1, 3, 5, 7, 9],
       black: [2, 4, 6, 8],
@@ -98,7 +97,8 @@ export default class App extends Component {
   startGame() {
     // set the luckyNumber
 
-    let random = Math.floor(Math.random() * (10 - 0)) + 0;
+    var random = 8;
+    
     let red = this.state.red;
     
     let luckyNumber = this.state.luckyNumber;
@@ -114,7 +114,7 @@ export default class App extends Component {
 
     /* change buttons
      When spin button is clicked do the following:
-    - hide spin button
+    - hide spin butto n
     - show reset button
     - dusable reset button to prevent further clicking
     */
@@ -364,7 +364,7 @@ export default class App extends Component {
     tl.to(ball, 1, { transform: `rotate(${this.state.spins.slot9}deg)` });
   }
 
-  render() {
+    render() {
     return (
       <Wrapper>
         {/*JSON.stringify(this.state.currentNumber)*/}

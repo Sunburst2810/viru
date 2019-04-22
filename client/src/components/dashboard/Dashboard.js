@@ -22,10 +22,21 @@ class Dashboard extends Component {
             Play
           </Link>
         </div>
+        <div>
+          <Link to="/create-profile" className="btn btn-lg btn-danger">
+            Create Profile
+          </Link>
+        </div>
         <br />
+
         <div>
           <Link to="/bet" className="btn btn-lg btn-info">
             Place Bet
+          </Link>
+        </div>
+        <div>
+          <Link to="/calculator" className="btn btn-lg btn-info">
+            Betting
           </Link>
         </div>
       </div>

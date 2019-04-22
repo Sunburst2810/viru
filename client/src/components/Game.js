@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import GameStore from '../stores/GameStore';
 import * as Actions from '../actions/GameActions';
 
-import styles from './Game.css';
+import styles from '../App.css';
 
 import Board from './Board';
 import Infobox from './Infobox';
@@ -101,10 +101,14 @@ class Game extends Component {
         return (
             <div className={styles.gameContainer}>
                 <Infobox deleteBet={this.deleteBet.bind(this)} ref="infobox" />
-                <Board optionClicked={this.optionClicked.bind(this)} deleteBet={this.deleteBet.bind(this)} />
+                <Board optionClicked={this.optionClicked.bind(this)} 
+                deleteBet={this.deleteBet.bind(this)} />
                 <Controls playPrevoiusBets={this.playPrevoiusBets.bind(this)} />
-                <EndGameWindow display={this.state.endGame} winningNumber={this.state.winningNumber} win={this.state.win} />
-                <ErrorWindow display={this.state.moneyError} deleteError={this.deleteError.bind(this)} />
+                <EndGameWindow display={this.state.endGame} 
+                winningNumber={this.state.winningNumber} 
+                win={this.state.win} />
+                <ErrorWindow display={this.state.moneyError} 
+                deleteError={this.deleteError.bind(this)} />
             </div>
         );
     }
